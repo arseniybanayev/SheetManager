@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using SheetManager.Metadata;
 
 namespace SheetManager.App
@@ -6,6 +7,9 @@ namespace SheetManager.App
 	internal class Program
 	{
 		public static void Main(string[] args) {
+			if (Debugger.IsAttached)
+				PdfTools.SetDebugOn();
+
 			const string pdfPath = @"C:\dev\SheetManager\SheetManager\lanz.pdf";
 			var text = PdfTools.GetText(pdfPath);
 			var i = 0;

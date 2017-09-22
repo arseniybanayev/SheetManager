@@ -1,0 +1,7 @@
+C:\dev\SheetManager\SheetManager.Test\bin\Debug\SheetManager.Test.dll.config
+C:\dev\SheetManager\SheetManager.Test\bin\Debug\SheetManager.Test.dll
+C:\dev\SheetManager\SheetManager.Test\bin\Debug\SheetManager.Test.pdb
+C:\dev\SheetManager\SheetManager.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\dev\SheetManager\SheetManager.Test\obj\Debug\SheetManager.Test.csprojResolveAssemblyReference.cache
+C:\dev\SheetManager\SheetManager.Test\obj\Debug\SheetManager.Test.dll
+C:\dev\SheetManager\SheetManager.Test\obj\Debug\SheetManager.Test.pdb
