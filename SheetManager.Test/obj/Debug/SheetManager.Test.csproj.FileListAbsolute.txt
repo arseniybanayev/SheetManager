@@ -5,3 +5,4 @@ C:\dev\SheetManager\SheetManager.Test\bin\Debug\Microsoft.VisualStudio.QualityTo
 C:\dev\SheetManager\SheetManager.Test\obj\Debug\SheetManager.Test.csprojResolveAssemblyReference.cache
 C:\dev\SheetManager\SheetManager.Test\obj\Debug\SheetManager.Test.dll
 C:\dev\SheetManager\SheetManager.Test\obj\Debug\SheetManager.Test.pdb
+C:\dev\SheetManager\SheetManager.Test\obj\Debug\SheetManager.Test.csproj.CoreCompileInputs.cache

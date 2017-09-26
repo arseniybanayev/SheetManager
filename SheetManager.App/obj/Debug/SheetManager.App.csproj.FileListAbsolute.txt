@@ -23,3 +23,4 @@ c:\dev\SheetManager\SheetManager.App\obj\Debug\SheetManager.App.exe
 c:\dev\SheetManager\SheetManager.App\obj\Debug\SheetManager.App.pdb
 c:\dev\SheetManager\SheetManager.App\bin\Debug\Ghostscript.NET.dll
 c:\dev\SheetManager\SheetManager.App\bin\Debug\Ghostscript.NET.xml
+C:\dev\SheetManager\SheetManager.App\obj\Debug\SheetManager.App.csproj.CoreCompileInputs.cache

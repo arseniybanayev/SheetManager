@@ -1,0 +1,11 @@
+C:\dev\SheetManager\SheetManager.Web\bin\Debug\netcoreapp2.0\SheetManager.Web.deps.json
+C:\dev\SheetManager\SheetManager.Web\bin\Debug\netcoreapp2.0\SheetManager.Web.runtimeconfig.json
+C:\dev\SheetManager\SheetManager.Web\bin\Debug\netcoreapp2.0\SheetManager.Web.runtimeconfig.dev.json
+C:\dev\SheetManager\SheetManager.Web\bin\Debug\netcoreapp2.0\SheetManager.Web.dll
+C:\dev\SheetManager\SheetManager.Web\bin\Debug\netcoreapp2.0\SheetManager.Web.pdb
+C:\dev\SheetManager\SheetManager.Web\obj\Debug\netcoreapp2.0\SheetManager.Web.csprojResolveAssemblyReference.cache
+C:\dev\SheetManager\SheetManager.Web\obj\Debug\netcoreapp2.0\SheetManager.Web.csproj.CoreCompileInputs.cache
+C:\dev\SheetManager\SheetManager.Web\obj\Debug\netcoreapp2.0\SheetManager.Web.AssemblyInfoInputs.cache
+C:\dev\SheetManager\SheetManager.Web\obj\Debug\netcoreapp2.0\SheetManager.Web.AssemblyInfo.cs
+C:\dev\SheetManager\SheetManager.Web\obj\Debug\netcoreapp2.0\SheetManager.Web.dll
+C:\dev\SheetManager\SheetManager.Web\obj\Debug\netcoreapp2.0\SheetManager.Web.pdb

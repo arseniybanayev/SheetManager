@@ -6,8 +6,9 @@ namespace SheetManager.Test
 	public class OcrTest
 	{
 		[TestMethod]
-		public void Test() {
-			
+		public void Test()
+		{
+
 		}
 	}
 }
