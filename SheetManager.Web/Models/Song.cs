@@ -4,8 +4,7 @@
 	{
 		public Song() { }
 
-		public Song(string name, int bookId, int pageNumber)
-		{
+		public Song(string name, int bookId, int pageNumber) {
 			Name = name;
 			BookID = bookId;
 			PageNumber = pageNumber;

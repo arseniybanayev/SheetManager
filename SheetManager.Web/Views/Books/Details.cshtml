@@ -1,30 +1,37 @@
-﻿@model SheetManager.Web.Models.Book
+﻿@using SheetManager.Web.Controllers
+@model SheetManager.Web.Models.Book
 
 @{
-    ViewData["Title"] = "Details";
+	ViewData["Title"] = nameof(BooksController.Details);
 }
 
-<h2>Details</h2>
+<h2>@Model.Name</h2>
 
 <div>
-    <h4>Book</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Path)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Path)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-    </dl>
+	<h4>@Model.Path</h4>
+	<hr />
+	@if (Model.Songs.Any()) {
+		<table class="table">
+			<tr>
+				<th>Name</th>
+				<th>Page #</th>
+			</tr>
+			@foreach (var song in Model.Songs.OrderBy(s => s.PageNumber)) {
+				<tr>
+					<td>
+						@Html.DisplayFor(model => song.Name)
+					</td>
+					<td>
+						@Html.DisplayFor(model => song.PageNumber)
+					</td>
+				</tr>
+			}
+		</table>
+	} else {
+		@Html.Raw("No songs found.")
+	}
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+	<a asp-action="@nameof(BooksController.Edit)" asp-route-id="@Model.ID">Edit</a> |
+	<a asp-action="@nameof(BooksController.Index)">Back to List</a>
 </div>

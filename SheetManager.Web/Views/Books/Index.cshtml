@@ -1,23 +1,28 @@
-﻿@model IEnumerable<SheetManager.Web.Models.Book>
+﻿@using SheetManager.Web.Controllers
+@model IEnumerable<SheetManager.Web.Models.Book>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = nameof(BooksController.Index);
 }
 
-<h2>Index</h2>
+<h2>@nameof(BooksController.Index)</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="@nameof(BooksController.Create)">Create New</a>
 </p>
 <table class="table">
     <thead>
         <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Path)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Name)
-                </th>
+	        <th>
+		        <a asp-action="@nameof(BooksController.Index)" asp-route-sortOrder="@ViewData["NameSortParam"]">
+			        @Html.DisplayNameFor(model => model.Name)
+		        </a>
+	        </th>
+	        <th>
+		        <a asp-action="@nameof(BooksController.Index)" asp-route-sortOrder="@ViewData["GenreSortParam"]">
+			        @Html.DisplayNameFor(model => model.Genre)
+		        </a>
+	        </th>
             <th></th>
         </tr>
     </thead>
@@ -25,15 +30,15 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Path)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                <a asp-action="@nameof(BooksController.Edit)" asp-route-id="@item.ID">@nameof(BooksController.Edit)</a> |
+                <a asp-action="@nameof(BooksController.Details)" asp-route-id="@item.ID">@nameof(BooksController.Details)</a> |
+                <a asp-action="@nameof(BooksController.Delete)" asp-route-id="@item.ID">@nameof(BooksController.Delete)</a>
             </td>
         </tr>
 }

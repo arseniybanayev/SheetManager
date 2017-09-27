@@ -13,7 +13,13 @@ namespace SheetManager.Web.Data
 				return; // DB has already been seeded with test data
 
 			var books = new[] {
-				new Book(@"C:\Users\arsen\Sheet Music\Jazz & Blues\(VA) After Midnight Jazz.pdf", "After Midnight Jazz")
+				new Book {
+					Name = "After Midnight Jazz",
+					Path = @"C:\Users\arsen\Sheet Music\Jazz & Blues\(VA) After Midnight Jazz.pdf",
+					Genre = Genre.JazzBlues,
+					IsArrangement = true,
+					IsCompilation = true
+				}
 			};
 
 			foreach (var book in books)

@@ -1,28 +1,40 @@
-﻿@model SheetManager.Web.Models.Book
+﻿@using SheetManager.Web.Controllers
+@model SheetManager.Web.Models.Book
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = nameof(BooksController.Edit);
 }
 
-<h2>Edit</h2>
+<h2>@nameof(BooksController.Edit)</h2>
 
 <h4>Book</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="@nameof(BooksController.Edit)">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ID" />
-            <div class="form-group">
-                <label asp-for="Path" class="control-label"></label>
-                <input asp-for="Path" class="form-control" />
-                <span asp-validation-for="Path" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
+	        <input type="hidden" asp-for="ID" />
+	        <div class="form-group">
+		        <label asp-for="Name" class="control-label"></label>
+		        <input asp-for="Name" class="form-control" />
+		        <span asp-validation-for="Name" class="text-danger"></span>
+	        </div>
+	        <div class="form-group">
+		        <label asp-for="Genre" class="control-label"></label>
+		        <input asp-for="Genre" class="form-control" />
+		        <span asp-validation-for="Genre" class="text-danger"></span>
+	        </div>
+	        <div class="form-group">
+		        <label asp-for="Path" class="control-label"></label>
+		        <input asp-for="Path" class="form-control" />
+		        <span asp-validation-for="Path" class="text-danger"></span>
+	        </div>
+	        <div class="checkbox">
+		        <label><input asp-for="IsArrangement" type="checkbox" /> Arrangement</label>
+	        </div>
+	        <div class="checkbox">
+		        <label><input asp-for="IsCompilation" type="checkbox" /> Compilation</label>
+	        </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-default" />
             </div>
@@ -31,7 +43,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="@nameof(BooksController.Index)">Back to List</a>
 </div>
 
 @section Scripts {
